@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:paddingLeft="24dp" android:paddingRight="24dp"
+    android:paddingTop="8dp">
+    <EditText android:id="@+id/input"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:hint="მაგ. +99532222" android:inputType="phone" android:textSize="18sp" />
+    <TextView
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" android:text="ფილტრის ტიპი"
+        android:textColor="@color/muted" android:textSize="13sp" />
+    <RadioGroup android:id="@+id/types"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/rStarts" android:checked="true"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="იწყება — ნომერი ამით იწყება" />
+        <RadioButton android:id="@+id/rContains"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="შეიცავს — ნომერში სადმე არის" />
+        <RadioButton android:id="@+id/rExact"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="ზუსტი — მხოლოდ ეს ნომერი" />
+    </RadioGroup>
+</LinearLayout>
