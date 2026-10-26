@@ -168,17 +168,11 @@ class MainActivity : Activity() {
         if (bold) setTypeface(null, Typeface.BOLD)
     }
 
-    private fun chip(t: RuleType): TextView {
-        val (bg, fg) = when (t) {
-            RuleType.STARTS -> R.color.starts_bg to R.color.starts_fg
-            RuleType.CONTAINS -> R.color.contains_bg to R.color.contains_fg
-            RuleType.EXACT -> R.color.exact_bg to R.color.exact_fg
-        }
-        return text(t.label, 12f, fg, true).apply {
+    private fun chip(t: RuleType): TextView =
+        text(t.label, 12f, R.color.chip_fg, true).apply {
             setPadding(dp(10), dp(3), dp(10), dp(3))
-            background = GradientDrawable().apply { setColor(color(bg)); cornerRadius = dp(20).toFloat() }
+            background = GradientDrawable().apply { setColor(color(R.color.chip_bg)); cornerRadius = dp(20).toFloat() }
         }
-    }
 
     private fun empty(msg: String) {
         list.addView(text(msg, 15f, R.color.muted, false).apply {

@@ -6,10 +6,6 @@
     <color name="line">#E5E7EB</color>
     <color name="accent">#E5484D</color>
     <color name="ok">#16A34A</color>
-    <color name="starts_bg">#E0EBFF</color>
-    <color name="starts_fg">#1D4ED8</color>
-    <color name="contains_bg">#FEF3C7</color>
-    <color name="contains_fg">#B45309</color>
-    <color name="exact_bg">#EDE9FE</color>
-    <color name="exact_fg">#6D28D9</color>
+    <color name="chip_bg">#EEF0F3</color>
+    <color name="chip_fg">#374151</color>
 </resources>
